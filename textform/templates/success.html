@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Form Submitted Successfully!</h1>
+    <p>Thank you {{user_name}} for providing your information.</p>
+
+    <!-- Link to return to the form -->
+    <a href="{% url 'user_form' %}" class="btn">Return to Form</a>
+  </div>
+
+</body>
+</html>
